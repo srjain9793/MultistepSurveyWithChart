@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="./chart.js"></script> -->
+<script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-base.min.js"></script>
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
+
+<link href="./my.css" rel="stylesheet">
+
+<body>
+
+  <div id="intro">
+    <div>
+      <h1>Symmetra</h1>
+      <h3>Welcome to your free Team Inclusion Self-Assessment. </h3>
+      This 5-minute survey will allow you to benchmark your team against global leaders using Symmetra’s Inclusion
+      Competency Framework.
+    </div>
+    <button onclick="createPage()">Begin</button>
+  </div>
+
+  <div id="surveyDiv" style="display: none;">
+  </div>
+
+  <div id="btnDiv" style="display: none; text-align: center;">
+
+    <span class="errmsg"></span>
+
+    <div id="step_div" style="text-align:center;margin-top:20px;">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+
+    <div style="overflow:auto;">
+      <div style="float:right;">
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      </div>
+    </div>
+  </div>
+  <!-- <div id="myAvg" style="display: none;">
+    Check Your Score
+  </div> -->
+  <div id="graphContainer" style="width: 100%; height: 100%;margin:0;padding:0;display: none;">
+    <h1>Your Team Inclusion Results</h1>
+    Below are your results benchmarked against the global top quartile:
+    <div id="scoreGraph" style="width: 80%; height: 80%;margin:0;padding:0;"></div>
+    Of course, a self-assessment is only part of the picture. To get a real sense of inclusion in your team, you will
+    need to get the perspectives of everyone on the team.
+    If you are interested in exploring the use of our Team Inclusion Pulse Assessment in your team or organisation, let
+    us know and we will be in touch:
+    <div>
+      <button>I'm Interested</button>
+      <button>No Thanks</button>
+    </div>
+  </div>
+</body>
+<script src="./my.js"></script>
+<script src="./hbcustom.js"></script>
+
+</html>
